@@ -44,7 +44,7 @@ export default function Login() {
     if (email && password) {
       navigation.navigate('Home');
     } else {
-      // Adicione um feedback para o usuário, por exemplo, uma mensagem de erro
+      
       console.log("Preencha todos os campos antes de logar.");
     }
   };
@@ -64,7 +64,7 @@ export default function Login() {
         value={email}
         placeholder="email"
         onChange={handleOnChangeEmail}
-        style={styles.TextAreaInput} // Adicione o estilo aqui
+        style={styles.TextAreaInput} 
       />
 
       <Text style={styles.textInput}>Senha</Text>
@@ -72,7 +72,7 @@ export default function Login() {
         value={password}
         placeholder="password"
         onChange={handleOnChangePassword}
-        style={styles.TextAreaInput} // Adicione o estilo aqui
+        style={styles.TextAreaInput} 
         secureTextEntry={true} // Para esconder a senha
       />
 

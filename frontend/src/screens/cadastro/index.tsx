@@ -7,15 +7,23 @@ import { getItemStorage } from "../../functions/storageProxy";
 import { AUTHORIZATION_KEY } from "../../shared/constants/authorizationConstants";
 import { UserType } from "../../shared/types/UserType";
 import axios from "axios";
+import { UserCrud } from "../../modules/user/userCrud";
 
 export default function Cadastro() {
   const {
+    typeUser,
+    name,
     email,
+    phone,
     password,
-    handleOnChangeEmail,
+    cpf,
+    createUser,
+    handleOnChangeName,
     handleOnChangePassword,
-    
-  } = useLogin();
+    handleOnChangePhone,
+    handleOnChangeEmail,
+    handleOnChangeCpf,
+  } = UserCrud();
 
   const navigation = useNavigation();
 
@@ -41,7 +49,7 @@ export default function Cadastro() {
 
   return (
     <View style={styles.body}>
-      {/* Adicione a imagem centralizada */}
+      
       
 
       <Text style={styles.textInput}>Nome</Text>
@@ -49,14 +57,14 @@ export default function Cadastro() {
         value={email}
         placeholder="email"
         onChange={handleOnChangeEmail}
-        style={styles.TextAreaInput} // Adicione o estilo aqui
+        style={styles.TextAreaInput} 
       />
       <Text style={styles.textInput}>Email</Text>
       <TextInput
         value={email}
         placeholder="email"
         onChange={handleOnChangeEmail}
-        style={styles.TextAreaInput} // Adicione o estilo aqui
+        style={styles.TextAreaInput} 
       />
 
       <Text style={styles.textInput}>Senha</Text>
@@ -64,12 +72,28 @@ export default function Cadastro() {
         value={password}
         placeholder="password"
         onChange={handleOnChangePassword}
-        style={styles.TextAreaInput} // Adicione o estilo aqui
+        style={styles.TextAreaInput} 
         secureTextEntry={true} // Para esconder a senha
       />
 
+      <Text style={styles.textInput}>phone</Text>
+      <TextInput
+        value={phone}
+        onChange={handleOnChangePhone}
+        placeholder="phone"
+        style={styles.TextAreaInput}
+      />
+
+    <Text style={styles.textInput}>cpf</Text>
+      <TextInput
+        value={cpf}
+        onChange={handleOnChangeCpf}
+        placeholder="cpf"
+        style={styles.TextAreaInput}
+      />
+
      <TouchableOpacity  style={styles.botao} onPress={() => navigation.navigate('Home')}>
-        <Text style={styles.botaoText}>Cadastro</Text>
+        <Text style={styles.botaoText}>Cadastrar Usuário</Text>
       </TouchableOpacity>
 
        
