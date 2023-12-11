@@ -6,6 +6,7 @@ export declare global {
             Details: {price: number, nameProduct: string}
             Cart: undefined;
             Login: undefined;
+            Cadastro: undefined;
             Order: undefined;
             Product: undefined;
         }

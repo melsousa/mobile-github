@@ -54,7 +54,7 @@ export default function Details(){
                 
                 <View style = {styles.rowIncraseBtn}>
                     <TouchableOpacity 
-                        style={[styles.btnIncrase, {backgroundColor:"rgba(0,0,0,0.1)"}]}
+                        style={[styles.btnIncrase, {backgroundColor:"#C9C9C9"}]}
                         // onPress={handleRemoveValue}}
                         
                         >
@@ -63,7 +63,7 @@ export default function Details(){
 
                     <Text>1</Text>
                     <TouchableOpacity 
-                        style={[styles.btnIncrase, {backgroundColor:"rgba(0,0,0,0.8)"}]}
+                        style={[styles.btnIncrase, {backgroundColor:"#C9C9C9"}]}
                         // onPress={handleRemoveValue}}
                         
                         >

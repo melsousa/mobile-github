@@ -66,7 +66,7 @@ export const styles = StyleSheet.create({
     },
 
     rate:{
-        color: "rgb(0,0,0,0.5)",
+        color: "#C9C9C9",
     },
 
     rowIncraseBtn :{
@@ -99,7 +99,7 @@ export const styles = StyleSheet.create({
 
     description: {
         textAlign: "justify",
-        color: "rgba(0,0,0,0.5)",
+        color: "#C9C9C9",
     },
 
     footer :{
@@ -110,12 +110,12 @@ export const styles = StyleSheet.create({
         bottom: 0,
         padding: 16,
         borderTopWidth: 1,
-        borderTopColor: "rgba(0, 0, 0, 0.1)",
+        borderTopColor: "#C9C9C9",
         width:"100%"
     },
 
     titlePrice: {
-        color: "rgba(0,0,0,0.5)",
+        color: "#C9C9C9",
         fontSize: 14,
     },
 
@@ -125,7 +125,7 @@ export const styles = StyleSheet.create({
     },
 
     btnCart: {
-        backgroundColor: "rgba(0,0,0,0.8)",
+        backgroundColor: "#C9C9C9",
         padding: 16,
         borderRadius: 12,
         alignItems: "center",

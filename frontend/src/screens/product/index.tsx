@@ -24,33 +24,36 @@ export default function Product(){
     
     return(
         <View style={styles.body}>
-           <Text style={styles.textInput}>name</Text> 
+            <Text style={styles.title}>Cadastre seu produto</Text>
+           <Text style={styles.textInput}>Nome do produto</Text> 
            <TextInput
             value={name}
             onChange={handleOnChangeName }
-            placeholder="name"            
-            
+            placeholder="nome"            
+            style={styles.TextAreaInput} 
            />
 
-           {/* <Text style={styles.textInput}>price</Text> 
-           <TextInput
-            value={price}
-            onChange={handleOnChangePrice}   
-            placeholder="price"
-              
-           /> */}
+           
 
-           <Text style={styles.textInput}>image</Text> 
+           <Text style={styles.textInput}>Imagem do produto</Text> 
            <TextInput
             value={image}
            onChange={handleOnChangeImage}
-            placeholder="image"
-             
+            placeholder="imagem"
+            style={styles.TextAreaInput} 
+           />
+
+          <Text style={styles.textInput}>Preço do produto</Text> 
+           <TextInput
+            value={price}
+           onChange={handleOnChangePrice}
+            placeholder="preço"
+            style={styles.TextAreaInput} 
            />
 
 
-        <TouchableOpacity  onPress={() => createProduct()}>
-                <Text>Criar</Text>
+        <TouchableOpacity style={styles.botao} onPress={() => createProduct()}>
+                <Text style={styles.botaoText}>Criar Produto</Text>
         </TouchableOpacity>
         </View>
     );

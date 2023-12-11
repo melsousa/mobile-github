@@ -15,15 +15,22 @@ export interface ProductProps{
 } 
 
 interface CategoryProps {
-    id: number
-    name: string
+    id: number;
+    name: string;
 }
-
-
 
 
 export default function Home(){
     const navigation = useNavigation();
+
+    const dataTeste =[
+        {category:{id:1, name:'Vassoura'}, image:"asdasdasd", name:"Playstation", price:150},
+        {category:{id:1, name:'Vassoura'}, image:"asdasdasd", name:"Playstation", price:150},
+        {category:{id:1, name:'Vassoura'}, image:"asdasdasd", name:"Playstation", price:150},
+        {category:{id:1, name:'Vassoura'}, image:"asdasdasd", name:"Playstation", price:150},
+        {category:{id:1, name:'Vassoura'}, image:"asdasdasd", name:"Playstation", price:150},
+        {category:{id:1, name:'Vassoura'}, image:"asdasdasd", name:"Playstation", price:150},
+    ]
 
     const {
         listProduct,
@@ -43,13 +50,13 @@ export default function Home(){
     
     return (
         <>
-              
-            <FlatList style={{backgroundColor:'#0a3d62'}}
-            data={product}
-            renderItem={({ item }) => <Card product={item} />} // Ajuste aqui
-        
-            />
+            <FlatList style={{margin:10}}
+                data={dataTeste}
+                renderItem={item => <Card product={item.item} />}
+                numColumns={2}
 
+            />
+            
         </>
       );
       

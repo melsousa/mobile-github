@@ -49,7 +49,7 @@ export const styles = StyleSheet.create({
     height: 20,
     width: 20,
     borderRadius: 10,
-    backgroundColor: 'rgba(0, 0, 0, 0.8)',
+    backgroundColor: '#c9c9c9',
     alignItems: 'center',
     justifyContent: 'center'
   },
@@ -57,7 +57,7 @@ export const styles = StyleSheet.create({
     height: 20,
     width: 20,
     borderRadius: 10,
-    backgroundColor: 'rgba(0, 0, 0, 0.2)',
+    backgroundColor: '#c9c9c9',
     alignItems: 'center',
     justifyContent: 'center'
   },

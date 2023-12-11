@@ -6,8 +6,12 @@ import Cart from '../screens/cart';
 import Login  from '../screens/login'
 import Order from '../screens/order'
 import Product from '../screens/product';
+import Cadastro from '../screens/cadastro';
 import { useNavigation } from "@react-navigation/native";
-import { Button } from "react-native"
+
+import { styles } from "./styles";
+import { TouchableOpacity } from 'react-native-gesture-handler';
+import {  Text } from "react-native";
 
 const Stack = createStackNavigator();
 
@@ -17,10 +21,12 @@ export default function MyStack() {
     <Stack.Navigator screenOptions={{
       
     }}>
-      <Stack.Screen name="Login" component={Login} />
+      <Stack.Screen name="Login" component={Login} options={{headerShown: false}} />
       <Stack.Screen name="Home"  options={{
           headerRight:() => (
-            <Button title='Cadastro de Produto' onPress={() => navigation.navigate('Product')} />
+            <TouchableOpacity style={styles.botao}  onPress={() => navigation.navigate('Product')} >
+              <Text>Cadastro de Produto</Text>
+            </TouchableOpacity>
 
           )
       }} component={Home} />
@@ -28,7 +34,10 @@ export default function MyStack() {
       <Stack.Screen name="Details" options={{headerShown: false}} component={Details} />
       <Stack.Screen  name="Cart" options={{headerShown: false}}component={Cart} />
       <Stack.Screen  name="Order" options={{headerShown: false}}component={Order} />
-      <Stack.Screen  name="Product" options={{headerShown: false}}component={Product} />
+      <Stack.Screen  name="Product" component={Product} />
+      
+      <Stack.Screen  name="Cadastro" component={Cadastro} />
+      
       
     </Stack.Navigator>
   );

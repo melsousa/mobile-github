@@ -45,22 +45,29 @@ export const styles = StyleSheet.create({
     backgroundColor: "#ccc", // Cor de fundo de fallback
   },
 
- botao: {
-  width: 250,
-  height: 45,
-  backgroundColor: "#ffb142",
-  borderRadius: 5,
-  margin: 10,
-  alignItems:'center',
-  justifyContent: 'center'
- },
- textCadastro:{
-  color: '#000'
- },
+  botao: {
+    width: 250,
+    height: 45,
+    backgroundColor: "#ffb142",
+    borderRadius: 5,
+    margin: 10,
+    alignItems:'center',
+    justifyContent: 'center'
+   },
+   botaoText: {
+    fontSize: 16,
+    color: "#fff",
+    
+   },
 
- botaoText: {
-  fontSize: 16,
-  color: "#fff",
+   botaoVoltar: {
+    width: 250,
+    height: 45,
+    backgroundColor: "#4285F4",  // Cor de fundo para o botão de voltar
+    borderRadius: 5,
+    margin: 10,
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
   
- }
 });
